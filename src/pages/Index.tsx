@@ -47,7 +47,7 @@ const Index = () => {
     document.title = "BlindSpot - hiding those spoilers!";
   }, []);
 
-  const canonical = "https://c91c144c-45bb-4494-b7b1-f4a8bf9ff538.lovableproject.com/";
+  const canonical = "https://https://hyke60.github.io/blindspotforspoilers/";
 
   const ld = useMemo(() => {
     const product = {
