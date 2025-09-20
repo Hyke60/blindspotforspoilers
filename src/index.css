@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --background: 30 100% 97%; /* Warm off-white */
+    --foreground: 12 27% 20%; /* Dark brown */
+
+    --card: 30 100% 97%;
+    --card-foreground: 12 27% 20%;
+
+    --popover: 30 100% 97%;
+    --popover-foreground: 12 27% 20%;
+
+    --primary: 45 80% 31%; /* Golden brown */
+    --primary-foreground: 30 100% 97%;
+    --primary-glow: 32 54% 65%; /* Warm tan */
+
+    --secondary: 32 20% 90%;
+    --secondary-foreground: 12 27% 20%;
+
+    --muted: 32 20% 90%;
+    --muted-foreground: 12 15% 50%;
+
+    --accent: 32 54% 65%; /* Warm tan */
+    --accent-foreground: 12 27% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 30 100% 97%;
+
+    --border: 32 25% 85%;
+    --input: 32 25% 85%;
+    --ring: 45 80% 31%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 32 20% 95%;
+    --sidebar-foreground: 12 27% 20%;
+    --sidebar-primary: 45 80% 31%;
+    --sidebar-primary-foreground: 30 100% 97%;
+    --sidebar-accent: 32 15% 88%;
+    --sidebar-accent-foreground: 12 27% 20%;
+    --sidebar-border: 32 25% 85%;
+    --sidebar-ring: 45 80% 31%;
+
+    /* Design extras */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --shadow-elevated: 0 12px 30px -8px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 8px 40px hsl(var(--primary-glow) / 0.35);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 12 27% 8%; /* Dark brown background */
+    --foreground: 30 40% 90%; /* Light warm text */
+
+    --card: 12 27% 10%;
+    --card-foreground: 30 40% 90%;
+
+    --popover: 12 27% 10%;
+    --popover-foreground: 30 40% 90%;
+
+    --primary: 32 54% 65%; /* Warm tan for dark mode */
+    --primary-foreground: 12 27% 8%;
+    --primary-glow: 45 80% 50%; /* Brighter golden brown */
+
+    --secondary: 12 20% 15%;
+    --secondary-foreground: 30 40% 90%;
+
+    --muted: 12 20% 15%;
+    --muted-foreground: 30 20% 70%;
+
+    --accent: 45 60% 55%; /* Adjusted golden brown */
+    --accent-foreground: 12 27% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 30 40% 90%;
+
+    --border: 12 20% 20%;
+    --input: 12 20% 20%;
+    --ring: 32 54% 65%;
+
+    --sidebar-background: 12 27% 6%;
+    --sidebar-foreground: 30 40% 85%;
+    --sidebar-primary: 32 54% 65%;
+    --sidebar-primary-foreground: 12 27% 8%;
+    --sidebar-accent: 12 20% 12%;
+    --sidebar-accent-foreground: 30 40% 85%;
+    --sidebar-border: 12 20% 15%;
+    --sidebar-ring: 32 54% 65%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--primary)));
+    --shadow-elevated: 0 12px 30px -8px hsl(var(--primary-glow) / 0.35);
+    --shadow-glow: 0 8px 40px hsl(var(--primary) / 0.4);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
