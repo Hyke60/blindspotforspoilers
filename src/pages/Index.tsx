@@ -4,7 +4,6 @@ import Logo from "@/components/Logo";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { EyeOff, Sparkles, Shield, ListChecks, Lock, Globe } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const PhoneMock = () => {
   return (
@@ -275,12 +274,12 @@ const Index = () => {
               BlindSpot is built privacy-first. Your keywords and settings are stored locally on your device. We don't collect personal identification information, location data, or your browsing content from other apps.
             </p>
             <div className="mt-4">
-              <Link 
-                to="/privacy-policy" 
+              <a 
+                href="/privacy-policy" 
                 className="inline-flex items-center text-sm text-primary hover:underline"
               >
                 Read our full Privacy Policy
-              </Link>
+              </a>
             </div>
           </div>
         </Section>
