@@ -275,7 +275,7 @@ const Index = () => {
             </p>
             <div className="mt-4">
               <a 
-                href="/privacypolicy" 
+                href="/privacy-policy" 
                 className="inline-flex items-center text-sm text-primary hover:underline"
               >
                 Read our full Privacy Policy
